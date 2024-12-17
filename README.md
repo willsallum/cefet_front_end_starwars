@@ -172,10 +172,12 @@ o conteúdo de `pre.introducao` conforme definido, para reiniciar a animação
       descobre-se de qual filme aquele <code>&lt;li&gt;</code> se refere. Isso pode ser feito,
       por exemplo, por meio de atributos de dados colocados no <code>&lt;li&gt;</code>
       (ie, <code>&lt;</code> data-episode-id="..."<code>/li&gt;</code>).
+
    1. Inserir novo elemento usando **`document.createElement('li')`**:
       quando usamos a "forma mais burocrática" para criar novos elementos,
       podemos configurá-lo antes de inserí-lo na árvore. Ou seja,
       podemos chamar `addEventListener(...)` no próprio <code>&lt;li&gt;</code>.
+      
    1. Inserir novo elemento criando um **fragmento de DOM**: nessa abordagem,
       temos um _template_ (código HTML dentro de uma string do JavaScript) mas,
       em vez de fazer `pai.innerHTML += template`, criamos um fragmento de DOM,
