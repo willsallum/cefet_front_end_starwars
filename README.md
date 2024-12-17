@@ -170,12 +170,12 @@ o conteúdo de `pre.introducao` conforme definido, para reiniciar a animação
       (não confunda com `evt.currentTarget`¹). Verifica-se
       se o `target` é um dos <code>&lt;li&gt;</code> da <code>&lt;ul&gt;</code> e, em caso afirmativo,
       descobre-se de qual filme aquele <code>&lt;li&gt;</code> se refere. Isso pode ser feito,
-      por exemplo, por meio de atributos de dados colocados no <li>
-      (ie, `<li data-episode-id="...">`).
+      por exemplo, por meio de atributos de dados colocados no <code>&lt;li&gt;</code>
+      (ie, <code>&lt;</code> data-episode-id="..."<code>/li&gt;</code>).
    1. Inserir novo elemento usando **`document.createElement('li')`**:
       quando usamos a "forma mais burocrática" para criar novos elementos,
       podemos configurá-lo antes de inserí-lo na árvore. Ou seja,
-      podemos chamar `addEventListener(...)` no próprio `<li>`.
+      podemos chamar `addEventListener(...)` no próprio <code>&lt;li&gt;</code>.
    1. Inserir novo elemento criando um **fragmento de DOM**: nessa abordagem,
       temos um _template_ (código HTML dentro de uma string do JavaScript) mas,
       em vez de fazer `pai.innerHTML += template`, criamos um fragmento de DOM,
@@ -184,7 +184,7 @@ o conteúdo de `pre.introducao` conforme definido, para reiniciar a animação
       do _template_ antes que ele seja inserido do DOM oficial.
 
 
-   ¹`evt.target` vs `evt.currentTarget`: apesar de parecidos, essas propriedades podem ter valores diferentes. Enquanto `currentTarget` sempre aponta exatamente para o elemento em que registramos o evento (nesse caso, chamamos `addEventListener` na `#filmes ul`), o `target` pode ser um dos filhos/descendentes de quem sofreu o evento (ou seja, pode ser uma das `<li>`).
+   ¹`evt.target` vs `evt.currentTarget`: apesar de parecidos, essas propriedades podem ter valores diferentes. Enquanto `currentTarget` sempre aponta exatamente para o elemento em que registramos o evento (nesse caso, chamamos `addEventListener` na `#filmes ul`), o `target` pode ser um dos filhos/descendentes de quem sofreu o evento (ou seja, pode ser uma das <code>&lt;li&gt;</code>).
 </details>
 
 
