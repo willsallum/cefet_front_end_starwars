@@ -159,16 +159,18 @@ o conteúdo de `pre.introducao` conforme definido, para reiniciar a animação
 <details>
    <summary>Como colocar evento de <code>'click'</code> ao <code>&lt;li&gt;</code> recém-criado?</summary>
 
+
    Para tratar um evento (eg, `click`) de um elemento que estamos
    criando dinamicamente, há diferentes opções:
 
+
    1. **_Event delegation_** (não vimos em aula): em vez de registrar
-      o `click` em cada `<li>`, registramos no pai dele. Dentro
+      o `click` em cada <li>, registramos no pai dele. Dentro
       da função _handler_ do evento, perguntamos quem é o `evt.target`
       (não confunda com `evt.currentTarget`¹). Verifica-se
-      se o `target` é um dos `<li>` da `<ul>` e, em caso afirmativo,
-      descobre-se de qual filme aquele `<li>` se refere. Isso pode ser feito,
-      por exemplo, por meio de atributos de dados colocados no `<li>`
+      se o `target` é um dos <li> da <ul> e, em caso afirmativo,
+      descobre-se de qual filme aquele <li> se refere. Isso pode ser feito,
+      por exemplo, por meio de atributos de dados colocados no <li>
       (ie, `<li data-episode-id="...">`).
    1. Inserir novo elemento usando **`document.createElement('li')`**:
       quando usamos a "forma mais burocrática" para criar novos elementos,
