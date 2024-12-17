@@ -8,6 +8,7 @@ Um página com as intros do melhores filmes _ever_.
 ## Atividade
 
 Baixe a sua atividade clicando [Aqui!](https://github.com/willsallum/cefet_front_end_starwars/archive/main.zip)
+
 Você deve usar a Star Wars API (https://swapi.dev) para poder (a) carregar
 dinamicamente a lista de filmes e (b) também para exibir o respectivo texto
 introdutório quando o usuário selecionar um filme.
