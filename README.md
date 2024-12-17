@@ -165,11 +165,11 @@ o conteúdo de `pre.introducao` conforme definido, para reiniciar a animação
 
 
    1. **_Event delegation_** (não vimos em aula): em vez de registrar
-      o `click` em cada <li>, registramos no pai dele. Dentro
+      o `click` em cada <code>&lt;li&gt;</code>, registramos no pai dele. Dentro
       da função _handler_ do evento, perguntamos quem é o `evt.target`
       (não confunda com `evt.currentTarget`¹). Verifica-se
-      se o `target` é um dos <li> da <ul> e, em caso afirmativo,
-      descobre-se de qual filme aquele <li> se refere. Isso pode ser feito,
+      se o `target` é um dos <code>&lt;li&gt;</code> da <code>&lt;ul&gt;</code> e, em caso afirmativo,
+      descobre-se de qual filme aquele <code>&lt;li&gt;</code> se refere. Isso pode ser feito,
       por exemplo, por meio de atributos de dados colocados no <li>
       (ie, `<li data-episode-id="...">`).
    1. Inserir novo elemento usando **`document.createElement('li')`**:
